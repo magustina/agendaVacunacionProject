@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>AppRestIS2WS</title>
+    </h:head>
+    <h:body>
+        <h1><u>WebServices RESTfull from IS2</u></h1>
+        <h5><u>Autora</u>: Agustina Trinidad</h5>
+        <h3>URL permitidas:</h3>
+        <ol>
+            <li>
+                <h4>Usuarios</h4>
+                <ul>
+                    <li><b>POST:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/usuarios/crear</li>
+                    <li><b>PUT:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/usuarios/editar</li>
+                    <li><b>DELETE:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/usuarios/eliminar/{id_usuario}</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/usuarios/consultar/{id_usuario}</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/usuarios/todos</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/usuarios/consultar_por_email/{email}</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/usuarios/hijos/{id_usuario}</li>
+                </ul>
+            </li>
+            <li>
+                <h4>Hijos</h4>
+                <ul>
+                    <li><b>POST:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/hijos/crear</li>
+                    <li><b>PUT:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/hijos/editar</li>
+                    <li><b>DELETE:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/hijos/eliminar/{id_hijo}</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/hijos/consultar/{id_hijo}</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/hijos/todos</li>
+                </ul>
+            </li>
+            <li>
+                <h4>Registros de Vacunaciones</h4>
+                <ul>
+                    <li><b>POST:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/registros/crear</li>
+                    <li><b>PUT:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/registros/editar</li>
+                    <li><b>DELETE:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/registros/eliminar/{id_registro}</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/registros/consultar/{id_registro}</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/registros/todos</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/registros/consultar_por_hijo/{id_hijo}</li>
+                </ul>
+            </li>
+            <li>
+                <h4>Vacunas</h4>
+                <ul>
+                    <li><b>POST:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/vacunas/crear</li>
+                    <li><b>PUT:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/vacunas/editar</li>
+                    <li><b>DELETE:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/vacunas/eliminar/{id_vacuna}</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/vacunas/consultar/{id_vacuna}</li>
+                    <li><b>GET:</b>  http://{server_ip_or_servername}:8080/AppRestIS2WS/services/vacunas/todos</li>
+                </ul>
+            </li>
+        </ol>
+    </h:body>
+</html>
+
